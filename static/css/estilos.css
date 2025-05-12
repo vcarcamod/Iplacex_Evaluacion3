@@ -1,0 +1,26 @@
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: #f0f0f0;
+    margin: 0;
+    flex-direction: column;
+}
+.boton {
+    background-color: #007bff;
+    color: white;
+    padding: 15px 30px;
+    margin: 10px;
+    border: none;
+    border-radius: 10px;
+    text-align: center;
+    font-size: 18px;
+    text-decoration: none;
+    display: inline-block;
+    width: 200px;
+    cursor: pointer;
+}
+.boton:hover {
+    background-color: #0056b3;
+}

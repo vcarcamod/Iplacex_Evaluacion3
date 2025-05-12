@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ejercicio 2</title>
+    <link rel="stylesheet" href="/static/css/formulario_ej1.css">
+</head>
+<body>
+    <div class="form-container">
+        <form method="post" action="/ejercicio2">
+            <label for="nombre1">Nombre 1:</label>
+            <input type="text" id="nombre1" name="nombre1">
+            <label for="nombre2">Nombre 2:</label>
+            <input type="text" id="nombre2" name="nombre2">
+            <label for="nombre3">Nombre 3:</label>
+            <input type="text" id="nombre3" name="nombre3">
+            <input type="submit" value="Enviar">
+        </form>
+
+        {% if nombre_largo %}
+        <div class="result">
+            <p>El nombre con mayor cantidad de caracteres es: "{{ nombre_largo }}"</p>
+            <p>El nombre tiene: {{ largo }} caracteres</p>
+        </div>
+        {% endif %}
+
+
+
+    </div>
+</body>
+</html>
